@@ -5,75 +5,71 @@
     <title>Portfólio de Projetos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Gabriel Messias</h1>
+    <header>
+        <h1>Gabriel Messias</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-</header>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar">
+        <p>Sou estudante de Ciência da Computação com foco em desenvolver mais habilidades.</p>
+    </section>
 
-<section id="sobre">
-    <h2>Sobre Mim</h2>
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
 
-    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
-     alt="Avatar de Gabriel Messias" width="150">
+        <div class="cards">
 
-    <p>
-        Sou estudante de Ciência da Computação com foco em desenvolver mais habilidades.
-    </p>
-</section>
+            <article>
+                <h3>House of the Dragon - Site Temático</h3>
+                <p>
+                    Projeto inspirado na série House of the Dragon, desenvolvido com HTML e CSS,
+                    focado na estruturação semântica, organização de layout e estilização visual.
+                </p>
+                <a href="https://github.com/GabrielMessias-22/Projeto-HOD" target="_blank">
+                    Ver no GitHub
+                </a>
+            </article>
 
-<section id="projetos">
-    <h2>Meus Projetos</h2>
+            <article>
+                <h3>Projeto Portfólio</h3>
+                <p>Criação de um site pessoal utilizando HTML básico.</p>
+                <a href="#">Ver no GitHub</a>
+            </article>
 
-    <article>
-        <h3>House of the Dragon - Site Temático</h3>
-        <p>
-            Projeto inspirado na série House of the Dragon, desenvolvido com HTML e CSS,
-            focado na estruturação semântica, organização de layout e estilização visual.
-        </p>
-        <a href="https://github.com/GabrielMessias-22/Projeto-HOD.git" target="_blank">
-            Ver no GitHub
-        </a>
-    </article>
+        </div>
+    </section>
 
-    <article>
-        <h3>Projeto Portifólio</h3>
-        <p>
-            Criação de um site pessoal utilizando HTML básico.
-        </p>
-        <a href="#">Ver no GitHub</a>
-    </article>
+    <section id="contato">
+        <h2>Contato</h2>
 
-</section>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
 
-<section id="contato">
-    <h2>Contato</h2>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
 
-    <form>
-        <label>Nome:</label><br>
-        <input type="text" name="nome" required><br><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem"></textarea>
 
-        <label>E-mail:</label><br>
-        <input type="email" name="email" required><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
-        <label>Mensagem:</label><br>
-        <textarea name="mensagem"></textarea><br><br>
-
-        <button type="submit">Enviar</button>
-    </form>
-</section>
-
-<footer>
-    <p>2026 - Desenvolvido por Gabriel Messias</p>
-</footer>
+    <footer>
+        <p>2026 - Desenvolvido por Gabriel Messias</p>
+    </footer>
 
 </body>
 </html>
